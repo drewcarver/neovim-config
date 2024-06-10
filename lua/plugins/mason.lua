@@ -44,6 +44,9 @@ return {
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
       vim.keymap.set('n', 'gf', vim.lsp.buf.implementation, {})
       vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, {})
+      vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>', {})
+      vim.keymap.set('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>', {})
+      vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
     end
   }
 }
