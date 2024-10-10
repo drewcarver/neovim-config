@@ -24,9 +24,6 @@ return {
       lspconfig.tsserver.setup({
         capabilities = capabilities
       })
-      lspconfig.solargraph.setup({
-        capabilities = capabilities
-      })
       lspconfig.fsautocomplete.setup({
         capabilities = capabilities
       })
@@ -37,6 +34,9 @@ return {
         capabilities = capabilities
       })
       lspconfig.lua_ls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.rust_analyzer.setup({
         capabilities = capabilities
       })
 
